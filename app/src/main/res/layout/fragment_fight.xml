@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bghero"
+    tools:context=".FightFragment">
+
+
+    <TextView
+        android:id="@+id/aliasesValueTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/strengthTextViewFragment"
+        app:layout_constraintEnd_toStartOf="@+id/HeroImageViewFragment"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/aliasesTextView"
+        app:layout_constraintTop_toTopOf="@+id/aliasesTextView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/HeroImageViewFragment"
+        android:layout_width="172dp"
+        android:layout_height="228dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/superman"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toEndOf="@+id/heroNameTextViewFragment"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:contentDescription="@string/hero_image" />
+
+    <TextView
+        android:id="@+id/heroNameTextViewFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/red_neon"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/HeroImageViewFragment" />
+
+    <TextView
+        android:id="@+id/nameTextViewFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/yellow_neon"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+
+        app:layout_constraintStart_toStartOf="@+id/heroNameTextViewFragment"
+        app:layout_constraintTop_toBottomOf="@+id/heroNameTextViewFragment" />
+
+    <TextView
+        android:id="@+id/raceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/heroNameTextViewFragment"
+        app:layout_constraintTop_toBottomOf="@+id/nameTextViewFragment" />
+
+    <TextView
+        android:id="@+id/aliasesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/aliases"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/raceTextView"
+        app:layout_constraintTop_toBottomOf="@+id/raceTextView" />
+
+    <TextView
+        android:id="@+id/strengthTextViewFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/strength"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/aliasesTextView"
+        app:layout_constraintTop_toBottomOf="@+id/HeroImageViewFragment" />
+
+    <TextView
+        android:id="@+id/intelligenceTextViewFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/intelligence"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/strengthTextViewFragment"
+        app:layout_constraintTop_toBottomOf="@+id/strengthTextViewFragment" />
+
+    <TextView
+        android:id="@+id/speedTextViewFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/speed"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/intelligenceTextViewFragment"
+        app:layout_constraintTop_toBottomOf="@+id/intelligenceTextViewFragment" />
+
+    <TextView
+        android:id="@+id/durabilityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/durability"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/speedTextViewFragment"
+        app:layout_constraintTop_toBottomOf="@+id/speedTextViewFragment" />
+
+    <TextView
+        android:id="@+id/combatTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/combat"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/durabilityTextView"
+        app:layout_constraintTop_toBottomOf="@+id/durabilityTextView" />
+
+    <TextView
+        android:id="@+id/firstAppearanceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/first_appearance"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/combatTextView"
+        app:layout_constraintTop_toBottomOf="@+id/combatTextView" />
+
+    <TextView
+        android:id="@+id/groupsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/affiliated_groups"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/firstAppearanceTextView"
+        app:layout_constraintTop_toBottomOf="@+id/firstAppearanceTextView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/intelligenceValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/intelligenceTextViewFragment"
+        app:layout_constraintTop_toTopOf="@+id/intelligenceTextViewFragment">
+
+        <TextView
+            android:id="@+id/intelligenceValue1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/yellow_for_val_20"
+            android:paddingStart="12dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:text="@string/_20"
+            android:textSize="12sp"
+            android:textColor="@color/yellow_for_val_20"/>
+
+        <TextView
+            android:id="@+id/intelligenceValue2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/yellow_for_val_40"
+            android:paddingStart="12dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:text="@string/_40"
+            android:textSize="12sp"
+            android:textColor="@color/yellow_for_val_40"/>
+
+        <TextView
+            android:id="@+id/intelligenceValue3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/orange_for_val_60"
+            android:paddingStart="12dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:text="@string/_60"
+            android:textSize="12sp"
+            android:textColor="@color/orange_for_val_60"/>
+
+        <TextView
+            android:id="@+id/intelligenceValue4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/orange_for_val_80"
+            android:paddingStart="12dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:text="@string/_80"
+            android:textColor="@color/orange_for_val_80"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/intelligenceValue5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/red_for_val_90"
+            android:paddingStart="12dp"
+            android:textColor="@color/red_for_val_90"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:text="@string/_90"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/intelligenceValue6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:paddingStart="12dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:text="@string/_100"
+            android:textColor="@color/red"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/strengthValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/intelligenceTextViewFragment"
+        app:layout_constraintTop_toTopOf="@+id/strengthTextViewFragment">
+
+        <TextView
+            android:id="@+id/strengthValue1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/yellow_for_val_20"
+            android:paddingStart="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/_20"
+            android:textSize="12sp"
+            android:textColor="@color/yellow_for_val_20"/>
+
+        <TextView
+            android:id="@+id/strengthValue2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/yellow_for_val_40"
+            android:paddingStart="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/_40"
+            android:textColor="@color/yellow_for_val_40"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/strengthValue3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/orange_for_val_60"
+            android:paddingStart="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/orange_for_val_60"
+            android:text="@string/_60"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/strengthValue4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/orange_for_val_80"
+            android:paddingStart="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/_80"
+            android:textColor="@color/orange_for_val_80"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/strengthValue5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/red_for_val_90"
+            android:paddingStart="12dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/red_for_val_90"
+            android:paddingBottom="8dp"
+            android:text="@string/_90"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/strengthValue6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:paddingStart="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/_100"
+            android:textColor="@color/red"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/speedValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/intelligenceTextViewFragment"
+        app:layout_constraintTop_toTopOf="@+id/speedTextViewFragment">
+
+        <TextView
+            android:id="@+id/speedValue1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/yellow_for_val_20"
+            android:paddingStart="12dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/yellow_for_val_20"
+            android:paddingBottom="8dp"
+            android:text="@string/_20"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/speedValue2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/yellow_for_val_40"
+            android:paddingStart="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/_40"
+            android:textColor="@color/yellow_for_val_40"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/speedValue3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/orange_for_val_60"
+            android:paddingStart="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/_60"
+            android:textColor="@color/orange_for_val_60"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/speedValue4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/orange_for_val_80"
+            android:paddingStart="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/orange_for_val_80"
+            android:text="@string/_80"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/speedValue5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/red_for_val_90"
+            android:paddingStart="12dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/red_for_val_90"
+            android:paddingBottom="8dp"
+            android:text="@string/_90"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/speedValue6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:paddingStart="12dp"
+            android:textColor="@color/red"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/_100"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/durabilityValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/intelligenceTextViewFragment"
+        app:layout_constraintTop_toTopOf="@+id/durabilityTextView">
+
+        <TextView
+            android:id="@+id/durabilityValue1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/yellow_for_val_20"
+            android:paddingStart="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/_20"
+            android:textColor="@color/yellow_for_val_20"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/durabilityValue2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/yellow_for_val_40"
+            android:paddingStart="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/_40"
+            android:textColor="@color/yellow_for_val_40"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/durabilityValue3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/orange_for_val_60"
+            android:paddingStart="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/_60"
+            android:textColor="@color/orange_for_val_60"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/durabilityValue4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/orange_for_val_80"
+            android:paddingStart="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/_80"
+            android:textColor="@color/orange_for_val_80"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/durabilityValue5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/red_for_val_90"
+            android:paddingStart="12dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/red_for_val_90"
+            android:paddingBottom="8dp"
+            android:text="@string/_90"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/durabilityValue6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:paddingStart="12dp"
+            android:textColor="@color/red"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/_100"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/combatValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/intelligenceTextViewFragment"
+        app:layout_constraintTop_toTopOf="@+id/combatTextView">
+
+        <TextView
+            android:id="@+id/combatValue1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/yellow_for_val_20"
+            android:background="@color/yellow_for_val_20"
+            android:paddingStart="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/_20"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/combatValue2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/yellow_for_val_40"
+            android:background="@color/yellow_for_val_40"
+            android:paddingStart="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/_40"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/combatValue3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/orange_for_val_60"
+            android:background="@color/orange_for_val_60"
+            android:paddingStart="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/_60"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/combatValue4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/orange_for_val_80"
+            android:paddingStart="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/orange_for_val_80"
+            android:text="@string/_80"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/combatValue5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/red_for_val_90"
+            android:paddingStart="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/_90"
+            android:textColor="@color/red_for_val_90"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/combatValue6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:textColor="@color/red"
+            android:paddingStart="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/_100"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/appearanceValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/firstAppearanceTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/firstAppearanceTextView"
+        app:layout_constraintTop_toTopOf="@+id/firstAppearanceTextView" />
+
+    <TextView
+        android:id="@+id/groupsValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/groupsTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toEndOf="@+id/groupsTextView"
+        app:layout_constraintTop_toTopOf="@+id/groupsTextView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
