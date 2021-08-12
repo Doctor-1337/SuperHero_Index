@@ -1,5 +1,6 @@
 # SuperHero_Index
-App to fetch Heroes data from superheroapi.com
+App to fetch Heroes data from **Superheroapi.com**
 
-Used retrofit to fetch data and display it in recyclerview. Also used picasso to load images from fetched Urls.
+Used **Retrofit** to fetch data and display it in **Recyclerview**. Also used **Picasso** to load images from fetched Urls.
+In recyclerview item added click listener to open a **Fragment** and display selected heroes description. 
 
