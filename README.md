@@ -7,7 +7,7 @@ In recyclerview item added click listener to open a **Fragment** and display sel
 
 
 
-![Empty List](App_Screenshots/Empty_List.png?raw=true "Title")
+![Empty List](App_Screenshots/1Empty_List.png?raw=true "Title")
 
 ![Populated List](App_Screenshots/Populated_List.png?raw=true "Title")
 
